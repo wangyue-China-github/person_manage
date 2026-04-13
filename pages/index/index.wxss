@@ -1,0 +1,73 @@
+/* 存款区域样式 */
+.deposit-section {
+  text-align: center;
+  background: linear-gradient(135deg, #4caf50, #45a049);
+  color: white;
+}
+
+.deposit-section .section-title {
+  color: white;
+  margin-bottom: 30rpx;
+}
+
+.deposit-amount {
+  font-size: 64rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+}
+
+.deposit-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20rpx;
+}
+
+.action-btn {
+  padding: 15rpx 30rpx;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+  font-weight: 600;
+  border: none;
+}
+
+.add-btn {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.withdraw-btn {
+  background-color: white;
+  color: #4caf50;
+}
+
+/* 自我反省区域样式 */
+.reflection-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.reflection-item:last-child {
+  border-bottom: none;
+}
+
+.item-title {
+  font-size: 28rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+/* 问题区域样式 */
+.problem-item {
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1rpx solid #f0f0f0;
+}
+
+.problem-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
