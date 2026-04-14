@@ -49,8 +49,10 @@ Page({
   addDeposit() {
     wx.showModal({
       title: '存入存款',
-      content: '请输入存入金额',
-      inputPlaceholder: '请输入金额',
+      content: '',
+      editable: true,
+      inputType: 'number',
+      inputPlaceholder: '请输入存入金额',
       success: (res) => {
         if (res.confirm) {
           const amount = parseFloat(res.content);
@@ -78,8 +80,10 @@ Page({
   withdrawDeposit() {
     wx.showModal({
       title: '取出存款',
-      content: '请输入取出金额',
-      inputPlaceholder: '请输入金额',
+      content: '',
+      editable: true,
+      inputType: 'number',
+      inputPlaceholder: '请输入取出金额',
       success: (res) => {
         if (res.confirm) {
           const amount = parseFloat(res.content);
