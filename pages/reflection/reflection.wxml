@@ -1,0 +1,96 @@
+<view class="container">
+  <!-- 标题区域 -->
+  <view class="header">
+    <view class="app-title" bindtap="goToWebView">我的星海</view>
+    <view class="app-subtitle">记录每个闪耀的日常片段</view>
+  </view>
+
+  <!-- 今日自省标题 -->
+  <view class="reflection-header">
+    <view class="reflection-title">
+      <text class="text-white">今日自省</text>
+      <text class="text-pink">✨</text>
+    </view>
+    <view class="history-reflection">
+      <text class="text-gray">⏱</text>
+      <text class="text-gray">历史打分</text>
+    </view>
+  </view>
+  <view class="reflection-desc text-gray">给今天的自己打个分（百分制）</view>
+
+  <!-- 评分项目 -->
+  <view class="rating-item card" style="background: linear-gradient(135deg, rgba(212, 255, 0, 0.1), transparent);">
+    <view class="rating-header">
+      <view class="rating-header-left">
+        <view class="icon-box" style="background-color: rgba(212, 255, 0, 0.2); color: #d4ff00;">☕</view>
+        <view class="rating-title text-white">家务</view>
+      </view>
+      <view class="rating-score text-yellow">{{scores.housework}}<text class="score-unit">分</text></view>
+    </view>
+    <view class="slider-wrapper">
+      <view class="slider-scale">
+        <text class="text-gray">0</text>
+        <slider class="rating-slider" min="0" max="100" value="{{scores.housework}}" activeColor="#d4ff00" backgroundColor="#333" blockColor="#fff" blockSize="24" bindchange="onHouseworkChange" />
+        <text class="text-gray">100</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="rating-item card" style="background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), transparent);">
+    <view class="rating-header">
+      <view class="rating-header-left">
+        <view class="icon-box" style="background-color: rgba(0, 255, 255, 0.2); color: #00ffff;">📇</view>
+        <view class="rating-title text-white">赚钱</view>
+      </view>
+      <view class="rating-score text-cyan">{{scores.makingMoney}}<text class="score-unit">分</text></view>
+    </view>
+    <view class="slider-wrapper">
+      <view class="slider-scale">
+        <text class="text-gray">0</text>
+        <slider class="rating-slider" min="0" max="100" value="{{scores.makingMoney}}" activeColor="#00ffff" backgroundColor="#333" blockColor="#fff" blockSize="24" bindchange="onMakingMoneyChange" />
+        <text class="text-gray">100</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="rating-item card" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.1), transparent);">
+    <view class="rating-header">
+      <view class="rating-header-left">
+        <view class="icon-box" style="background-color: rgba(236, 72, 153, 0.2); color: #ec4899;">💗</view>
+        <view class="rating-title text-white">松弛感</view>
+      </view>
+      <view class="rating-score text-pink">{{scores.relaxation}}<text class="score-unit">分</text></view>
+    </view>
+    <view class="slider-wrapper">
+      <view class="slider-scale">
+        <text class="text-gray">0</text>
+        <slider class="rating-slider" min="0" max="100" value="{{scores.relaxation}}" activeColor="#ec4899" backgroundColor="#333" blockColor="#fff" blockSize="24" bindchange="onRelaxationChange" />
+        <text class="text-gray">100</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="rating-item card" style="background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), transparent);">
+    <view class="rating-header">
+      <view class="rating-header-left">
+        <view class="icon-box" style="background-color: rgba(168, 85, 247, 0.2); color: #a855f7;">✨</view>
+        <view class="rating-title text-white">小确幸</view>
+      </view>
+      <view class="rating-score text-purple">{{scores.happiness}}<text class="score-unit">分</text></view>
+    </view>
+    <view class="slider-wrapper">
+      <view class="slider-scale">
+        <text class="text-gray">0</text>
+        <slider class="rating-slider" min="0" max="100" value="{{scores.happiness}}" activeColor="#a855f7" backgroundColor="#333" blockColor="#fff" blockSize="24" bindchange="onHappinessChange" />
+        <text class="text-gray">100</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 保存按钮 -->
+  <view class="save-btn-container">
+    <button class="btn-primary" bindtap="saveReflection">保存今日记录</button>
+  </view>
+
+  <view class="divider"></view>
+</view>

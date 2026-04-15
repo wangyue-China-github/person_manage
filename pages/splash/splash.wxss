@@ -1,0 +1,54 @@
+.splash-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx;
+  background-color: #ffffff;
+}
+
+.illustration {
+  margin-bottom: 60rpx;
+  animation: fadeIn 1s ease-out;
+}
+
+.splash-svg {
+  width: 500rpx;
+  height: 600rpx;
+}
+
+.poem {
+  text-align: center;
+  margin-bottom: 40rpx;
+  animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.poem-line {
+  font-size: 32rpx;
+  color: #333;
+  line-height: 2;
+  letter-spacing: 4rpx;
+}
+
+.author {
+  text-align: right;
+  padding-right: 80rpx;
+  animation: fadeIn 1s ease-out 0.6s both;
+}
+
+.author-line {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 1.8;
+  letter-spacing: 2rpx;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

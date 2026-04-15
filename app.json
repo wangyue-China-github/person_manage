@@ -1,12 +1,42 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/splash/splash",
+    "pages/assets/assets",
+    "pages/reflection/reflection",
+    "pages/tasks/tasks",
+    "pages/webview/webview"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "个人成长助手",
-    "navigationBarTextStyle": "black"
+    "navigationBarBackgroundColor": "#0a0a0a",
+    "navigationBarTitleText": "我的星海",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#666",
+    "selectedColor": "#00ffff",
+    "backgroundColor": "#0a0a0a",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/assets/assets",
+        "text": "资产",
+        "iconPath": "images/wallet.png",
+        "selectedIconPath": "images/wallet-active.png"
+      },
+      {
+        "pagePath": "pages/reflection/reflection",
+        "text": "自省",
+        "iconPath": "images/sparkle.png",
+        "selectedIconPath": "images/sparkle-active.png"
+      },
+      {
+        "pagePath": "pages/tasks/tasks",
+        "text": "待办",
+        "iconPath": "images/target.png",
+        "selectedIconPath": "images/target-active.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

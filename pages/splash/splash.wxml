@@ -1,0 +1,43 @@
+<view class="splash-container">
+  <view class="illustration">
+    <svg class="splash-svg" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+      <!-- 人物插画 -->
+      <g stroke="#555" stroke-width="2" fill="none">
+        <!-- 身体 -->
+        <path d="M150 150 Q120 180 100 220 L100 320 L150 320 L150 280 L180 280 L180 320 L200 320 L200 240 Q180 200 150 150" />
+        <!-- 头 -->
+        <ellipse cx="150" cy="120" rx="35" ry="40" />
+        <!-- 头发 -->
+        <path d="M120 90 Q150 70 180 90 Q180 80 185 95 L180 110 Q165 100 150 105 Q135 100 120 110 L115 95 Q120 80 120 90" fill="#555" />
+        <!-- 眼睛 -->
+        <circle cx="140" cy="115" r="3" fill="#555" />
+        <circle cx="160" cy="115" r="3" fill="#555" />
+        <!-- 鼻子/嘴巴 -->
+        <path d="M145 125 Q150 130 155 125" />
+        <!-- 手臂 -->
+        <path d="M100 180 Q80 200 80 220 L100 240" />
+        <path d="M180 180 Q190 200 190 220 L180 240" />
+      </g>
+      <!-- 杯子 -->
+      <g stroke="#555" stroke-width="2" fill="none">
+        <rect x="210" y="260" width="30" height="50" rx="5" />
+        <ellipse cx="225" cy="260" rx="15" ry="5" />
+        <ellipse cx="225" cy="310" rx="15" ry="5" />
+        <!-- 杯盖 -->
+        <ellipse cx="225" cy="255" rx="18" ry="6" fill="none" stroke="#555" stroke-width="2" />
+      </g>
+    </svg>
+  </view>
+  
+  <view class="poem">
+    <view class="poem-line">柔水终成雕刀。</view>
+    <view class="poem-line">反复与坚持之后，</view>
+    <view class="poem-line">为了想让这世界知道，</view>
+    <view class="poem-line">也只不过是</view>
+  </view>
+  
+  <view class="author">
+    <view class="author-line">——</view>
+    <view class="author-line">席慕容</view>
+  </view>
+</view>

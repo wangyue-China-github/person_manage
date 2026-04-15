@@ -1,0 +1,59 @@
+<view class="container">
+  <!-- 标题区域 -->
+  <view class="header">
+    <view class="app-title" bindtap="goToWebView">我的星海</view>
+    <view class="app-subtitle">记录每个闪耀的日常片段</view>
+  </view>
+
+  <!-- 我的存款卡片 -->
+  <view class="card neon-glow-purple">
+    <view class="deposit-header">
+      <view class="deposit-header-left">
+        <view class="icon-box icon-purple">🐷</view>
+        <view class="deposit-title">我的存款</view>
+      </view>
+      <view class="pig-icon">🐷</view>
+    </view>
+    <view class="deposit-desc text-yellow">⚡ 指完全不能随意动的部分（定期）</view>
+    <view class="deposit-amount">¥{{fixedDeposit.toLocaleString()}}.00</view>
+  </view>
+
+  <!-- 灵活资金管理卡片 -->
+  <view class="card neon-glow-cyan">
+    <view class="flexible-header">
+      <view class="flexible-header-left">
+        <view class="icon-box icon-cyan">💳</view>
+        <view class="deposit-title">灵活资金管理</view>
+      </view>
+      <view class="history-link">
+        <text class="text-gray">历史记录</text>
+        <text class="text-gray">↻</text>
+      </view>
+    </view>
+
+    <view class="flexible-stats">
+      <view class="stat-box">
+        <view class="stat-label text-gray">当前余额</view>
+        <view class="stat-value text-white">¥{{currentBalance.toLocaleString()}}</view>
+      </view>
+      <view class="stat-box">
+        <view class="stat-label text-gray">本月新增</view>
+        <view class="stat-value text-cyan">+¥{{monthlyIncome.toLocaleString()}}</view>
+      </view>
+    </view>
+
+    <view class="expense-card">
+      <view class="expense-left">
+        <view class="expense-label text-pink">📉 本月消费</view>
+        <view class="expense-value text-white">¥{{monthlyExpense.toLocaleString()}}</view>
+      </view>
+      <view class="expense-dots">
+        <view class="dot"></view>
+        <view class="dot"></view>
+        <view class="dot"></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="divider"></view>
+</view>

@@ -1,0 +1,90 @@
+.header {
+  margin-bottom: 40rpx;
+}
+
+.app-title {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.app-title:active {
+  opacity: 0.7;
+  transform: scale(0.98);
+}
+
+.tasks-header {
+  margin-bottom: 12rpx;
+}
+
+.tasks-title {
+  display: flex;
+  align-items: center;
+  gap: 12rpx;
+  font-size: 40rpx;
+  font-weight: 700;
+}
+
+.tasks-desc {
+  font-size: 24rpx;
+  margin-bottom: 32rpx;
+}
+
+.problem-card {
+  transition: all 0.3s ease;
+}
+
+.problem-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.problem-header-left {
+  display: flex;
+  align-items: center;
+  gap: 20rpx;
+  flex: 1;
+}
+
+.expand-icon {
+  font-size: 36rpx;
+  color: #d4ff00;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 56rpx;
+  height: 56rpx;
+  background-color: rgba(212, 255, 0, 0.1);
+  border-radius: 16rpx;
+}
+
+.expand-icon text.expanded {
+  transform: rotate(0deg);
+}
+
+.problem-title {
+  font-size: 32rpx;
+  font-weight: 600;
+  flex: 1;
+}
+
+.add-subtask-container {
+  margin-top: 20rpx;
+}
+
+.add-subtask-input {
+  width: 100%;
+  background-color: transparent;
+  color: #555;
+  font-size: 28rpx;
+  padding: 12rpx 0;
+}
+
+.subtask-circle {
+  width: 36rpx;
+  height: 36rpx;
+  border: 2rpx solid #555;
+  border-radius: 50%;
+}

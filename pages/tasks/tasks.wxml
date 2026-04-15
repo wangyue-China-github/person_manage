@@ -1,0 +1,61 @@
+<view class="container">
+  <!-- 标题区域 -->
+  <view class="header">
+    <view class="app-title" bindtap="goToWebView">我的星海</view>
+    <view class="app-subtitle">记录每个闪耀的日常片段</view>
+  </view>
+
+  <!-- 待解决问题标题 -->
+  <view class="tasks-header">
+    <view class="tasks-title">
+      <text class="text-white">待解决问题</text>
+      <text class="text-yellow">🌀</text>
+    </view>
+  </view>
+  <view class="tasks-desc text-gray">将大问题拆解成具体的执行步骤</view>
+
+  <!-- 问题列表 -->
+  <view wx:for="{{problems}}" wx:key="id" class="problem-card {{item.expanded ? 'expanded' : ''}}">
+    <view class="problem-header" bindtap="toggleProblem" data-id="{{item.id}}">
+      <view class="problem-header-left">
+        <view class="expand-icon">
+          <text class="{{item.expanded ? 'expanded' : ''}}">{{item.expanded ? '⌄' : '›'}}</text>
+        </view>
+        <view class="problem-title text-white">{{item.title}}</view>
+      </view>
+      <view class="progress-badge">
+        {{getCompletedCount(item)}} / {{item.subtasks ? item.subtasks.length : 0}}
+      </view>
+    </view>
+
+    <!-- 子任务列表 -->
+    <view wx:if="{{item.expanded && item.subtasks && item.subtasks.length > 0}}" class="subtask-container">
+      <view wx:for="{{item.subtasks}}" wx:for-item="subtask" wx:key="id" class="subtask-item {{subtask.completed ? 'completed' : ''}}">
+        <view class="subtask-check {{subtask.completed ? 'checked' : ''}}" bindtap="toggleSubtask" data-problem-id="{{item.id}}" data-subtask-id="{{subtask.id}}">
+          <text wx:if="{{subtask.completed}}">⟳</text>
+        </view>
+        <view class="subtask-text text-white">{{subtask.text}}</view>
+        <view wx:if="{{!subtask.completed}}" class="subtask-circle"></view>
+      </view>
+    </view>
+
+    <!-- 添加子任务 -->
+    <view wx:if="{{item.expanded}}" class="add-subtask-container">
+      <input 
+        class="add-subtask-input" 
+        placeholder="+ 新增拆解步骤" 
+        value="{{item.newSubtask}}"
+        bindinput="updateNewSubtask" 
+        data-problem-id="{{item.id}}"
+        confirm-type="done"
+        bindconfirm="addSubtask" 
+        data-problem-id="{{item.id}}"
+      />
+    </view>
+  </view>
+
+  <!-- 添加问题按钮 -->
+  <view class="btn-float" bindtap="showAddProblem">+</view>
+
+  <view class="divider"></view>
+</view>
