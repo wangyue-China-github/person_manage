@@ -41,6 +41,11 @@
 
 ---
 以上是我给豆包一张图，豆包给我生成的小程序介绍，确实比我会夸，以后还让他干这件事，完美弥补了我不会自夸的特点！
-## v0.1.1版
-![项目截图trae优化版](https://github.com/user-attachments/assets/4f13c626-e93a-4f64-a9ad-f73b7935c266)
+## v0.2.0版
+wegic效果图：
+<img width="1160" height="818" alt="ScreenShot_2026-04-15_115005_291" src="https://github.com/user-attachments/assets/b432e981-4342-43a7-8cc3-e890eaa5ebf6" />
+trae生成版：
+<img width="1164" height="828" alt="ScreenShot_2026-04-15_115052_747" src="https://github.com/user-attachments/assets/37a665d0-804d-4962-9122-511eefd3a12b" />
+
+
 
