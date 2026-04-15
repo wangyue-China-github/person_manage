@@ -41,4 +41,6 @@
 
 ---
 以上是我给豆包一张图，豆包给我生成的小程序介绍，确实比我会夸，以后还让他干这件事，完美弥补了我不会自夸的特点！
-![项目截图](https://github.com/user-attachments/assets/66a7ca38-3e7b-420d-9613-35eb9f6dd9da)
+## v0.1.1版
+![项目截图trae优化版](https://github.com/user-attachments/assets/4f13c626-e93a-4f64-a9ad-f73b7935c266)
+
